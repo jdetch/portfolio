@@ -1,0 +1,92 @@
+/* all app scss styles here */
+$fi-path : "../fonts/";
+
+@import "compass/css3";
+@import "compass/utilities";
+@import "foundation-icons";
+
+$purple: #4F146E;
+$darkpurple: #501070;
+$medblue: #495CE7;
+$lightblue: #3BD9F2;
+
+// $peach: #F8B195;
+// $pink: #F67280;
+// $raspberry: #C06C84;
+// $purple: #6C5B7B;
+$blue: #355C7D;
+
+// $offwhite: #EFF3CD;
+// $lightgreen: #B2D5BA;
+// $medgreen: #61ADA0;
+// $darkgreen: #248F8D;
+// $purple: #605063;
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation-wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+body {
+  background-color: #EDEDF4;
+}
+
+.headshot {
+  margin-top: 150px;
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+}
+
+h2, h3, h4 {
+  color: #395781;
+}
+
+hr {
+  border-color: #524656;
+}
+
+li {
+  display: block;
+}
+
+strong {
+  font-family: 'Raleway';
+  font-weight: 700;
+}
+
+
+// sizes for Foundation icons
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-24 { font-size: 24px; }
+.size-36 { font-size: 36px; }
+.size-48 { font-size: 48px; }
+.size-60 { font-size: 60px; }
+.size-72 { font-size: 72px; }
+
+.grayscale {
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%); /* For Webkit browsers */
+filter: gray; /* For IE 6 - 9 */
+-webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+}
+
+.grayscale:hover {
+filter: grayscale(0%);
+-webkit-filter: grayscale(0%);
+filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+}
+
+.enlarge:hover {
+  -webkit-transform: scale(1.5,1.5);
+  -moz-transform:scale(1.5,1.5);
+}
